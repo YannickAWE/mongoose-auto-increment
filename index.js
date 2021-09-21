@@ -86,8 +86,7 @@ exports.plugin = function (schema, options) {
                 counter = new IdentityCounter({
                     model: settings.model,
                     field: settings.field,
-                    count: settings.startAt - set
-                    tings.incrementBy
+                    count: settings.startAt - settings.incrementBy
                 });
                 counter.save(function () {
                     ready = true;
