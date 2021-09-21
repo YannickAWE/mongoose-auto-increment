@@ -41,8 +41,7 @@ exports.initialize = function (connection) {
 };
 // The function to use when invoking the plugin on a custom schema.
 exports.plugin = function (schema, options) {
-    // If we don't have reference to the counterSchema or the IdentityCounter model then the plugin was most likely n
-    ot
+    // If we don't have reference to the counterSchema or the IdentityCounter model then the plugin was most likely not
     // initialized properly so throw an error.
     if (!counterSchema || !IdentityCounter) throw new Error("mongoose-auto-increment has not been initialized");
     // Default settings and plugin scope variables.
